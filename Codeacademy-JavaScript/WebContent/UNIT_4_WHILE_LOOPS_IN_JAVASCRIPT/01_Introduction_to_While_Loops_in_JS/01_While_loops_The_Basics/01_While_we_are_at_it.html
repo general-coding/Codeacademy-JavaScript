@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	var coinFace = Math.floor(Math.random() * 2);
+
+	while (coinFace === 0) {
+		console.log("Heads! Flipping again...");
+		var coinFace = Math.floor(Math.random() * 2);
+	}
+	console.log("Tails! Done flipping.");
+</script>
+</head>
+<body>
+
+</body>
+</html>
