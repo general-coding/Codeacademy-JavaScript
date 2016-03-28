@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	var phonebookEntry = {};
+
+	phonebookEntry.name = 'Oxnard Montalvo';
+	phonebookEntry.number = '(555) 555-5555';
+	phonebookEntry.phone = function() {
+		console.log('Calling ' + this.name + ' at ' + this.number + '...');
+	};
+
+	phonebookEntry.phone();
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>
