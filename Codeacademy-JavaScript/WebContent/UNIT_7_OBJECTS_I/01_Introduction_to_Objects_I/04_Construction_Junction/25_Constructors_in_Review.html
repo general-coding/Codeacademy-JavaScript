@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	function Rabbit(adjective) {
+		this.adjective = adjective;
+		this.describeMyself = function() {
+			console.log("I am a " + this.adjective + " rabbit");
+		};
+	}
+
+	// now we can easily make all of our rabbits
+	var rabbit1 = new Rabbit("fluffy");
+	var rabbit2 = new Rabbit("happy");
+	var rabbit3 = new Rabbit("sleepy");
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

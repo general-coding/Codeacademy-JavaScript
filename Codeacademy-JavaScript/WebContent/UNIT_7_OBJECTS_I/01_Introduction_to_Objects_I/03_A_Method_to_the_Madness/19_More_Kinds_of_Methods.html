@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	var square = new Object();
+	square.sideLength = 6;
+	square.calcPerimeter = function() {
+		return this.sideLength * 4;
+	};
+	// help us define an area method here
+	square.calcArea = function() {
+		return this.sideLength * this.sideLength;
+	}
+
+	var p = square.calcPerimeter();
+	var a = square.calcArea();
+
+	console.log(p);
+	console.log(a);
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

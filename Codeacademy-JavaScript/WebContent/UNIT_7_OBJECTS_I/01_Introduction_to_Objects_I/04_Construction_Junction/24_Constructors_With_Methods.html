@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	function Rectangle(height, width) {
+		this.height = height;
+		this.width = width;
+		this.calcArea = function() {
+			return this.height * this.width;
+		};
+		// put our perimeter function here!
+		this.calcPerimeter = function() {
+			return 2 * (this.height + this.width);
+		}
+	}
+
+	var rex = new Rectangle(7, 3);
+	var area = rex.calcArea();
+	var perimeter = rex.calcPerimeter();
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>
