@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	var languages = {
+		english : "Hello!",
+		french : "Bonjour!",
+		notALanguage : 4,
+		spanish : "Hola!"
+	};
+
+	// print hello in the 3 different languages
+	for (lang in languages) {
+		if ((typeof languages[lang]) === "string") {
+			console.log(languages[lang]);
+		}
+	}
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

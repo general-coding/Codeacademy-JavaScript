@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	//create your Animal class here
+	function Animal(name, numLegs) {
+		this.name = name;
+		this.numLegs = numLegs;
+	}
+
+	// create the sayName method for Animal
+	Animal.prototype.sayName = function() {
+		console.log("Hi my name is " + this.name);
+	}
+
+	// provided code to test above constructor and method
+	var penguin = new Animal("Captain Cook", 2);
+	penguin.sayName();
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

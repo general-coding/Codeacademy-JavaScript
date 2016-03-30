@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	function Person(first, last, age) {
+		this.firstname = first;
+		this.lastname = last;
+		this.age = age;
+		var bankBalance = 7500;
+
+		var returnBalance = function() {
+			return bankBalance;
+		};
+
+		// create the new function here
+		this.askTeller = function() {
+			return returnBalance;
+		}
+	}
+
+	var john = new Person('John', 'Smith', 30);
+	console.log(john.returnBalance);
+	var myBalanceMethod = john.askTeller();
+	var myBalance = myBalanceMethod();
+	console.log(myBalance);
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

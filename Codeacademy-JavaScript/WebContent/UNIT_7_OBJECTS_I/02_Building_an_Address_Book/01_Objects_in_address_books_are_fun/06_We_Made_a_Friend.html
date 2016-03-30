@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	var bob = {
+		firstName : "Bob",
+		lastName : "Jones",
+		phoneNumber : "(650) 777-7777",
+		email : "bob.jones@example.com"
+	};
+
+	var mary = {
+		firstName : "Mary",
+		lastName : "Johnson",
+		phoneNumber : "(650) 888-8888",
+		email : "mary.johnson@example.com"
+	};
+
+	var contacts = [ bob, mary ];
+
+	function printPerson(person) {
+		console.log(person.firstName + " " + person.lastName);
+	}
+
+	function list() {
+		var contactsLength = contacts.length;
+		for (var i = 0; i < contactsLength; i++) {
+			printPerson(contacts[i]);
+		}
+	}
+
+	/*Create a search function
+	then call it passing "Jones"*/
+	function search(lastName) {
+		var contactsLength = contacts.length;
+		for (var i = 0; i < contactsLength; i++) {
+			if (contacts[i].lastName === lastName) {
+				printPerson(contacts[i]);
+			}
+		}
+	}
+
+	function add(firstName, lastName, email, phoneNumber) {
+		var friend = new Object();
+		friend.firstName = firstName;
+		friend.lastName = lastName;
+		friend.email = email;
+		friend.phoneNumber = phoneNumber;
+
+		contacts[contacts.length] = friend;
+	}
+
+	add("Jason", "Bourne", "jason.bourne@example.com", "(650) 999-9999");
+	list();
+	search("Bourne");
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>

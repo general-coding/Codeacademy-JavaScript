@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	function Person(job, married) {
+		this.job = job;
+		this.married = married;
+		// add a "speak" method to Person!
+		this.speak = function() {
+			console.log("Hello!");
+		};
+	}
+
+	var user = new Person("Codecademy Student", false);
+	user.speak();
+</script>
+<body>Right click. Inspect element. Console is in the right
+	bottom corner of the screen.
+</body>
+</html>
